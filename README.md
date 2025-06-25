@@ -1,1 +1,1 @@
-This is my personal site
+This is my personal site where i display my skills and projects

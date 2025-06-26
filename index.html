@@ -22,12 +22,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      @media (min-width: 768px) {
+        .row-desktop-margin {
+          margin-bottom: 7rem !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <header class="sticky-top">
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary shadow px-lg-3 py-3 align-items-center mb-5"
+        class="navbar navbar-expand-lg bg-body-tertiary shadow px-lg-3 py-3 align-items-center mb-4 mb-md-5"
       >
         <div class="container-fluid justify-content-between align-items-center">
           <button
@@ -76,36 +83,67 @@
     </header>
     <main>
       <div class="container">
-        <div class="row my-3">
-          <div class="col p-3 social-accounts"><div class="row"></div></div>
+        <div class="row d-md-none px-3 mb-4 justify-content-between">
+          <!-- LinkedIn and GitHub buttons: visible only on desktop -->
+          <div class="col-auto">
+            <a
+              href="https://www.linkedin.com/in/%C3%B6mer-burak-%C3%B6zuzun-055690175/"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+          <div class="col-auto">
+            <a
+              href="https://github.com/otomatikportal"
+              target="_blank"
+              class="btn btn-outline-dark"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
-        <div class="row justify-content-between mb-5 px-3 px-md-0">
+
+        <div
+          class="row justify-content-between mb-4 row-desktop-margin px-3 px-md-0"
+        >
           <div class="col">
-            <div class="row">
+            <div class="row align-items-end">
               <div class="col-12 col-md-auto mb-2 mb-md-0 fs-1 fw-bold">
-                This is Ömer
-              </div>
-              <div class="col-12 col-md-auto fs-3 fw-semibold">
-                Who am i?
                 <img
-                  src="svg/downward-arrow.svg"
+                  src="img/omer_burak_ozuzun.jpg"
+                  class="img-fluid mb-2 rounded-2"
+                  style="max-width: 220px"
+                  alt="Ömer Burak ÖZUZUN"
+                />
+              </div>
+              <div class="col-12 col-md-auto fs-3 ps-4 fw-bold">
+                Greetings! I am Ömer, <br />
+                here is some information about me
+              </div>
+              <div
+                class="col-12 col-md-auto mb-2 mb-md-0 fs-1 fw-bold d-none d-md-block"
+              >
+                <img
+                  src="svg/arrow.svg"
                   alt="arrow"
                   style="
-                    height: 5em;
+                    height: 3em;
                     vertical-align: middle;
                     margin-left: 0.5em;
-                    transform: rotate(45deg);
                     position: relative;
-                    top: 1.5em;
+                    top: 2em;
                   "
                 />
               </div>
             </div>
           </div>
 
-          <div class="col-auto p-3 social-accounts">
+          <div class="col-auto p-3 social-accounts d-flex align-items-end">
             <div class="row">
-              <div class="col-auto">
+              <!-- LinkedIn and GitHub buttons: visible only on desktop -->
+              <div class="col-auto d-none d-md-block">
                 <a
                   href="https://www.linkedin.com/in/%C3%B6mer-burak-%C3%B6zuzun-055690175/"
                   target="_blank"
@@ -114,7 +152,7 @@
                   <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
               </div>
-              <div class="col-auto">
+              <div class="col-auto d-none d-md-block">
                 <a
                   href="https://github.com/otomatikportal"
                   target="_blank"
@@ -123,12 +161,24 @@
                   <i class="fab fa-github"></i> GitHub
                 </a>
               </div>
+
+              <!-- Arrow image: visible only on mobile -->
+              <div class="col-auto d-md-none">
+                <img
+                  src="svg/arrow.svg"
+                  alt="arrow"
+                  style="height: 5em; position: relative; left: -1.5em"
+                />
+              </div>
             </div>
           </div>
         </div>
 
         <div class="row mb-5 px-3 px-md-0">
-          <div class="col fs-3 rounded-5 p-4 shadow">
+          <div class="col fs-3 p-4 shadow">
+            <div class="row">
+              <div class="col fw-semibold mb-3">Who am i?</div>
+            </div>
             <div class="row">
               <div class="col">
                 A curious
@@ -145,7 +195,7 @@
                   "
                   >industrial engineer</a
                 >
-                who tries to do a little bit of everything. A person with a big
+                who likes to do a bit of everything. A person with a big
                 enthusiasm of AI tools and have a good understanding of their
                 scope and capabilities. A generalist who is never afraid to dive
                 into any rabbit hole given the opportunity.
@@ -162,7 +212,7 @@
         </div>
 
         <div class="row mb-5 px-3 px-md-0">
-          <div class="col rounded-5 shadow p-4">
+          <div class="col shadow p-4">
             <div class="row mb-2">
               <div class="col fw-semibold fs-3">Arsenal</div>
             </div>
@@ -253,20 +303,19 @@
                   SQL
                 </span>
               </div>
-              <div class="col-auto">
+                <div class="col-auto">
                 <span
                   class="badge bg-secondary d-flex align-items-center"
                   style="font-size: 1em"
                 >
                   <img
-                    src="svg/http.svg"
-                    alt="HTTP Logo"
-                    class="me-2"
-                    style="width: 1.5em; height: 1.5em"
+                  src="svg/http.svg"
+                  alt="HTTP Logo"
+                  class="me-2"
+                  style="width: 1.5em; height: 1.5em; filter: brightness(0) invert(1);"
                   />
-                  HTTP
                 </span>
-              </div>
+                </div>
               <div class="col-auto">
                 <span
                   class="badge bg-danger d-flex align-items-center"
@@ -359,80 +408,203 @@
                   Node.js
                 </span>
               </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-dark text-white d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/mathematical-modeling.svg"
+                    alt="Mathematical Modeling Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Mathematical Modeling
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-teal text-white d-flex align-items-center"
+                  style="font-size: 1em; background-color: #008080"
+                >
+                  <img
+                    src="svg/operational-research.svg"
+                    alt="Operational Research Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Operational Research
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-blue text-white d-flex align-items-center"
+                  style="font-size: 1em; background-color: #0000ff"
+                >
+                  <img
+                    src="svg/simulation.svg"
+                    alt="Simulation Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Simulation
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="row mb-3">
-          <div class="col">
-            Since I got into
-            <a
-              href="https://bahcelievleral.meb.k12.tr/"
-              target="_blank"
-              style="color: inherit; text-decoration: underline"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Bahçelievler Anatolian High School"
-              >high school</a
-            >, I have been interested in graphic design, especially with Adobe
-            Illustrator. I did freelance designing throughout my years.
+        <div class="row mb-5 px-3 px-md-0" id="backgroundSection">
+          <div class="col shadow p-4">
+            <div class="row">
+              <div class="col fw-semibold mb-3 fs-4">Background</div>
+            </div>
+
+            <ul>
+              <li>
+                <div class="row mb-3">
+                  <div class="col">
+                    Since I got into
+                    <a
+                      href="https://bahcelievleral.meb.k12.tr/"
+                      target="_blank"
+                      style="color: inherit; text-decoration: underline"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Bahçelievler Anatolian High School"
+                      >high school</a
+                    >, I have been interested in graphic design, especially with
+                    Adobe Illustrator. I did freelance designing throughout my
+                    years.
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row mb-3">
+                  <div class="col">
+                    I had my first professional work experience in Ford Otosan
+                    as HR team member for 6 months, i got the opportunity to
+                    observe the biggest automotive company in the region, it
+                    turns out that managing a team of
+                    <a
+                      href="https://www.fordotosan.com.tr/en/corporate/about-ford-otosan/about-ford-otosan"
+                      target="_blank"
+                      style="color: inherit; text-decoration: underline"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="source: https://www.fordotosan.com.tr/en/corporate/about-ford-otosan/about-ford-otosan"
+                      >23,000 people</a
+                    >
+                    is a massive challenge of communication/collaboration, this
+                    is the reason i grew an interest on developing web apps and
+                    software. Started to use and develop spreadsheets and excel
+                    macros to track issues more effectively and calculate scores
+                    of candidates.
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row mb-3">
+                  <div class="col">
+                    While studying i had 2 internship opportunities for a month
+                    for each where i got the chance to participate in a
+                    production planning team in
+                    <a
+                      href="https://www.huhtamaki.com/tr/foodservice/"
+                      target="_blank"
+                      style="color: inherit; text-decoration: underline"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="About Huhtamaki Türkiye"
+                      >Huhtamaki Türkiye</a
+                    >
+                    where i helped the team in visualizing the inventory
+                    allocations regarding different customers, this is a place
+                    where i honed my skills in spreadsheet applications to a
+                    really good level. I can fully utilize all of the
+                    functionality in excel after this experience. <br />
+                    After Huhtamaki i got the chance to participate in the
+                    export sales team in
+                    <a
+                      href="https://www.kalekilit.com.tr/en/comporate/about-the-company"
+                      target="_blank"
+                      style="color: inherit; text-decoration: underline"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="About Kale Kilit"
+                      >Kale Kilit</a
+                    >. I developed a small excel application that automatically
+                    parses trade data from a data vendor and ranks the potential
+                    customers based on a custom scoring.
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row mb-3">
+                  <div class="col">
+                    I found the chance to participate in strategic marketing
+                    team of
+                    <a
+                      href="https://www.medtronic.com/me-en/index.html"
+                      target="_blank"
+                      style="color: inherit; text-decoration: underline"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="About Medtronic"
+                      >Medtronic</a
+                    >
+                    as an intern. The team paved the way of marketing team of
+                    the EMEA region in terms of data driven decision making. I
+                    participated in several projects including PowerBI
+                    dashboards, EMEA region internal website administration for
+                    marketing teams, requirements management of the data
+                    collection platforms and many more. I fully utilized all of
+                    microsoft enterprise products to increase the IT
+                    capabilities of the marketing teams for 6 months.
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col">
+                    For a year i am leading the digital transformation of a SME
+                    organization that excels in plastic injection production and
+                    manufacturing. I am currently developing the main MRP
+                    application that will be serving the company.
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="row mb-3">
-          <div class="col">
-            I had my first professional work experience in Ford Otosan as HR
-            team member for 6 months, i got the opportunity to observe the
-            biggest automotive company in the region, it turns out that managing
-            a team of
-            <a
-              href="https://www.fordotosan.com.tr/en/corporate/about-ford-otosan/about-ford-otosan"
-              target="_blank"
-              style="color: inherit; text-decoration: underline"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="source: https://www.fordotosan.com.tr/en/corporate/about-ford-otosan/about-ford-otosan"
-              >23,000 people</a
-            >
-            is a massive challenge of communication/collaboration, this is the
-            reason i grew an interest on developing web apps and software.
-            Started to use and develop spreadsheets and excel macros to track
-            issues more effectively and calculate scores of candidates.
-          </div>
-        </div>
+        <div class="row mb-5 px-3 px-md-0" id="backgroundSection">
+          <div class="col shadow p-4">
+            <div class="row">
+              <div class="col fw-semibold mb-3 fs-4">TLDR;</div>
+            </div>
 
-        <div class="row mb-3">
-          <div class="col">
-            While studying i had 2 internship opportunities for a month for each
-            where i got the chance to participate in a production planning team
-            in
-            <a
-              href="https://www.huhtamaki.com/tr/foodservice/"
-              target="_blank"
-              style="color: inherit; text-decoration: underline"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="About Huhtamaki Türkiye"
-              >Huhtamaki Türkiye</a
-            >
-            where i helped the team in visualizing the inventory allocations
-            regarding different customers, this is a place where i honed my
-            skills in spreadsheet applications to a really good level. I can
-            fully utilize all of the functionality in excel after this
-            experience. <br />
-            After Huhtamaki i got the chance to participate in the export sales
-            team in
-            <a
-              href="https://www.kalekilit.com.tr/en/comporate/about-the-company"
-              target="_blank"
-              style="color: inherit; text-decoration: underline"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="About Kale Kilit"
-              >Kale Kilit</a
-            >. I developed a small excel application that automatically parses
-            trade data from a data vendor and ranks the potential customers
-            based on a custom scoring.
+            <div class="row">
+              <div class="col fs-5">
+                Industrial engineer with good knowledge on high level languages, frameworks & web development.
+              </div>
+            </div>
           </div>
         </div>
       </div>

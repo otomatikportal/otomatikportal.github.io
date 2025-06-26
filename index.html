@@ -25,9 +25,9 @@
   </head>
 
   <body>
-    <header>
+    <header class="sticky-top">
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary shadow-lg px-lg-3 py-3 align-items-center mb-5"
+        class="navbar navbar-expand-lg bg-body-tertiary shadow px-lg-3 py-3 align-items-center mb-5"
       >
         <div class="container-fluid justify-content-between align-items-center">
           <button
@@ -76,47 +76,290 @@
     </header>
     <main>
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 col-md-auto mb-2 mb-md-0 fs-1 fw-semibold">
-            This is Ömer
+        <div class="row my-3">
+          <div class="col p-3 social-accounts"><div class="row"></div></div>
+        </div>
+        <div class="row justify-content-between mb-5 px-3 px-md-0">
+          <div class="col">
+            <div class="row">
+              <div class="col-12 col-md-auto mb-2 mb-md-0 fs-1 fw-bold">
+                This is Ömer
+              </div>
+              <div class="col-12 col-md-auto fs-3 fw-semibold">
+                Who am i?
+                <img
+                  src="svg/downward-arrow.svg"
+                  alt="arrow"
+                  style="
+                    height: 5em;
+                    vertical-align: middle;
+                    margin-left: 0.5em;
+                    transform: rotate(45deg);
+                    position: relative;
+                    top: 1.5em;
+                  "
+                />
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-auto fs-3">
-            Who am i?
-            <img
-              src="svg/downward-arrow.svg"
-              alt="arrow"
-              style="
-                height: 5em;
-                vertical-align: middle;
-                margin-left: 0.5em;
-                transform: rotate(45deg);
-                position: relative;
-                top: 1.5em;
-              "
-            />
+
+          <div class="col-auto p-3 social-accounts">
+            <div class="row">
+              <div class="col-auto">
+                <a
+                  href="https://www.linkedin.com/in/%C3%B6mer-burak-%C3%B6zuzun-055690175/"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+              <div class="col-auto">
+                <a
+                  href="https://github.com/otomatikportal"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="row mb-5 px-3 px-md-0">
-          <div class="col fs-3 rounded-5 p-4 shadow-sm border">
-            A curious
-            <a
-              href="https://www.yildiz.edu.tr/en"
-              target="_blank"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Yildiz Technical University: https://www.yildiz.edu.tr/en"
-              style="
-                text-decoration: underline;
-                cursor: pointer;
-                color: inherit;
-              "
-              >industrial engineer</a
-            >
-            who tries to do a little bit of everything. A person with a big
-            enthusiasm on AI tools and have a good understanding of their scope
-            and capabilities. A generalist who is never afraid to dive into any
-            rabbit hole given the opportunity. <br />I am currently residing in
-            Türkiye/İstanbul
+          <div class="col fs-3 rounded-5 p-4 shadow">
+            <div class="row">
+              <div class="col">
+                A curious
+                <a
+                  href="https://www.yildiz.edu.tr/en"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Yildiz Technical University: https://www.yildiz.edu.tr/en"
+                  style="
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: inherit;
+                  "
+                  >industrial engineer</a
+                >
+                who tries to do a little bit of everything. A person with a big
+                enthusiasm of AI tools and have a good understanding of their
+                scope and capabilities. A generalist who is never afraid to dive
+                into any rabbit hole given the opportunity.
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col">
+                I am currently residing in
+                <span class="fw-semibold">Türkiye/İstanbul</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5 px-3 px-md-0">
+          <div class="col rounded-5 shadow p-4">
+            <div class="row mb-2">
+              <div class="col fw-semibold fs-3">Arsenal</div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-auto">
+                <span
+                  class="badge bg-success d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/excel.svg"
+                    alt="Excel Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Excel
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-warning text-dark d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/js.svg"
+                    alt="JavaScript Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  JavaScript
+                </span>
+              </div>
+
+              <div class="col-auto">
+                <span
+                  class="badge bg-primary text-white d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/python.svg"
+                    alt="Python Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Python
+                </span>
+              </div>
+
+              <div class="col-auto">
+                <span
+                  class="badge bg-success text-white d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/django.svg"
+                    alt="Django Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  Django
+                </span>
+              </div>
+
+              <div class="col-auto">
+                <span
+                  class="badge bg-primary d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/sql.svg"
+                    alt="SQL Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  SQL
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-secondary d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/http.svg"
+                    alt="HTTP Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  HTTP
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-danger d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/html.svg"
+                    alt="HTML Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  HTML
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-info text-dark d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/css.svg"
+                    alt="CSS Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  CSS
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-warning text-dark d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/svelte.svg"
+                    alt="Svelte Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  Svelte
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-purple text-white d-flex align-items-center"
+                  style="font-size: 1em; background-color: #7952b3"
+                >
+                  <img
+                    src="svg/bootstrap.svg"
+                    alt="Bootstrap Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Bootstrap
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-orange text-dark d-flex align-items-center"
+                  style="font-size: 1em; background-color: #ff9a00"
+                >
+                  <img
+                    src="svg/adobe-illustrator.svg"
+                    alt="Adobe Illustrator Logo"
+                    class="me-2"
+                    style="width: 1.5em; height: 1.5em"
+                  />
+                  Adobe Illustrator
+                </span>
+              </div>
+              <div class="col-auto">
+                <span
+                  class="badge bg-success d-flex align-items-center"
+                  style="font-size: 1em"
+                >
+                  <img
+                    src="svg/nodejs.svg"
+                    alt="Node.js Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
+                  />
+                  Node.js
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -192,10 +435,6 @@
             based on a custom scoring.
           </div>
         </div>
-
-        <div class="row"><div class="col">
-
-        </div></div>
       </div>
     </main>
     <footer></footer>

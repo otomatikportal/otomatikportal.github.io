@@ -28,6 +28,20 @@
           margin-bottom: 7rem !important;
         }
       }
+
+      @media (max-width: 767px) {
+        .cv-button {
+          position: absolute;
+          top: 0.5rem;
+          right: 1rem;
+          z-index: 1050;
+        }
+
+        #navbarNav ul {
+          margin-top: 1rem; /* Increase top margin */
+          text-align: left; /* Align items to the left */
+        }
+      }
     </style>
   </head>
 
@@ -60,13 +74,10 @@
                   >Main page</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
             </ul>
           </div>
           <a
-            class="btn btn-outline-secondary d-flex align-items-center justify-content-between ms-2 mt-2 mt-lg-0"
+            class="btn btn-outline-secondary d-flex align-items-center justify-content-between ms-2 mt-2 mt-lg-0 cv-button"
             href="omer_burak_ozuzun_cv.pdf"
             download
           >
@@ -303,19 +314,23 @@
                   SQL
                 </span>
               </div>
-                <div class="col-auto">
+              <div class="col-auto">
                 <span
                   class="badge bg-secondary d-flex align-items-center"
                   style="font-size: 1em"
                 >
                   <img
-                  src="svg/http.svg"
-                  alt="HTTP Logo"
-                  class="me-2"
-                  style="width: 1.5em; height: 1.5em; filter: brightness(0) invert(1);"
+                    src="svg/http.svg"
+                    alt="HTTP Logo"
+                    class="me-2"
+                    style="
+                      width: 1.5em;
+                      height: 1.5em;
+                      filter: brightness(0) invert(1);
+                    "
                   />
                 </span>
-                </div>
+              </div>
               <div class="col-auto">
                 <span
                   class="badge bg-danger d-flex align-items-center"
@@ -602,7 +617,8 @@
 
             <div class="row">
               <div class="col fs-5">
-                Industrial engineer with good knowledge on high level languages, frameworks & web development.
+                Industrial engineer with good knowledge on high level languages,
+                frameworks & web development.
               </div>
             </div>
           </div>

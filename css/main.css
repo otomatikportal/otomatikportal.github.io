@@ -1,0 +1,28 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+img, embed, svg {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .row-desktop-margin {
+    margin-bottom: 7rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .cv-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 1050;
+  }
+  #navbarNav ul {
+    margin-top: 1rem; /* Increase top margin */
+    text-align: left; /* Align items to the left */
+  }
+}
